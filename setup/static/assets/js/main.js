@@ -352,11 +352,11 @@ function setTheme(theme) {
 	if (theme == "dark-theme") {
 		localStorage.setItem("theme", "light-theme");
 		$("html").addClass(theme);
-		$(".mode--toggle").find("img").attr("src", "assets/img/moon.png");
+		$(".mode--toggle").find("img").attr("src", "/static/assets/img/moon.png");
 	} else {
 		localStorage.setItem("theme", "dark-theme");
 		$("html").removeClass("dark-theme");
-		$(".mode--toggle").find("img").attr("src", "assets/img/sun.png");
+		$(".mode--toggle").find("img").attr("src", "/static/assets/img/sun.png");
 	}
 }
 
