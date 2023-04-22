@@ -1,4 +1,7 @@
 asgiref==3.6.0
 Django==4.2
+django-extensions==3.2.1
+MarkupSafe==2.1.2
 python-dotenv==1.0.0
 sqlparse==0.4.4
+Werkzeug==2.2.3
