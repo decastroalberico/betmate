@@ -3,5 +3,7 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, 'index.html')
-def futebol(request):
-    return render(request, 'futebol.html')
+def detalhes(request):
+    return render(request, 'detalhes.html')
+def eventos(request):
+    return render(request, 'eventos.html')

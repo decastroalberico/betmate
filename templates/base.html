@@ -67,9 +67,12 @@
    </div>
 </div>
 <!--==== Preloader End Here ======= -->
-
+<!--Main Body Section Here-->
+<div class="main-body">
 {% include 'partials/_header.html' %}
+{% include 'partials/_left_menu.html' %} 
 {% block content %}{% endblock %}
+{% include 'partials/_right_menu.html' %}
 {% include 'partials/_popup.html' %}
    <!--Jquery 3 6 0 Min Js-->
    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>

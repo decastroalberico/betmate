@@ -2413,7 +2413,7 @@ p {
 }
 
 .breadcumnd-banner {
-  background-color: var(--details);
+  background-color: var(--left-menu);
   padding: 44px 10px 25px;
 }
 
@@ -4294,7 +4294,7 @@ p {
 .main-tabbing .match-table .table-wrap .table-inner .table-body .table-body-right .table-pointing-box:not(:last-child) {
   text-align: center;
   margin: 0 auto;
-  background-color: var(--left-menu);
+  background-color: var(--theme-bg);
   border-radius: 5px;
   width: 100%;
   padding: 10px 10px;

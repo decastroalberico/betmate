@@ -1,1 +1,347 @@
-right
+{% load static %}
+<!--Right Box Chat-->
+    <div class="right-site-menu">
+        <div class="right-box">
+           <div class="right-wrapper-area">
+              <div class="blance-items">
+                 <div class="left-blance">
+                    <span><img src="{% static 'assets/img/header/right-icon/wallet.svg' %}" alt="icon"></span>
+                    <span class="text-blabce">Saldo</span>
+                 </div>
+                 <span class="blance">
+                    R$300
+                 </span>
+              </div>
+             <div class="betslip-wrapper">
+                 <a href="#0" class="left-betslip">
+                    <span class="bed2"><img src="{% static 'assets/img/header/right-icon/bed.png' %}" alt="icon"></span>
+                    <span class="bed1"><img src="{% static 'assets/img/header/right-icon/bed.png' %}" alt="icon"></span>
+                    <span class="text-bets">Boletim</span>
+                 </a>
+                 <a href="#0" class="left-betslip">
+                    <span><img src="{% static 'assets/img/header/right-icon/bets.svg' %}" alt="icon"></span>
+                    <span class="text-bets">Minhas Apostas</span>
+                 </a>
+              </div>
+              <div class="combo-box">
+                 <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link link-secondary" id="combo-tab" data-bs-toggle="tab" data-bs-target="#coombo" href="#"><span>Apostas Simples</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-secondary active" id="bets-tab" data-bs-toggle="tab" data-bs-target="#bbets" href="#"><span>Combos</span></a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="tabContentboxes">
+                    <div class="tab-pane fade" id="coombo" role="tabpanel" >
+                       <div class="combo-wrapper">
+                          <div class="combo-wrapper">
+                             <div class="close-box">
+                                <div class="close-items">
+                                  <div class="close-head">
+                                      <span>Latvia vs Moldova</span>
+                                      <span class="close">
+                                         <i class="fas fa-xmark"></i>
+                                      </span>
+                                  </div>
+                                  <div class="match-fixing">
+                                      <div class="match-items">
+                                         <div class="match-items-left">
+                                            <div class="icon">
+                                               <img src="{% static 'assets/img/header/right-icon/footaball.svg' %}" alt="icon">
+                                            </div>
+                                            <div class="cont">
+                                               <span>Moldova</span>
+                                               <span class="winner">Vitoria</span>
+                                            </div>
+                                         </div>
+                                         <div class="match-items-right">
+                                            <div class="icon">
+                                               <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                            </div>
+                                            <span>5.20</span>
+                                         </div>
+                                      </div>
+                                  </div>
+                                </div>
+                             </div>
+                             <div class="combo-switch">
+                                <span>
+                                   Aceitar custos da aposta
+                                </span>
+                                <label class="switch-com">
+                                   <input type="checkbox" class="checkbox" hidden>
+                                   <span class="checkbox-label">
+                                      <span class="ball"></span>
+                                    </span>
+                                </label>
+                             </div>
+                             <div class="ammount-items">
+                                <form action="#">
+                                   <input type="number" placeholder="Valor">
+                                   <button type="submit">
+                                      Max
+                                   </button>
+                                </form>
+                             </div>
+                             <div class="possible-win">
+                                <span>Previsão</span>
+                                <span class="amount">R$300</span>
+                             </div>
+                             <div class="combo-footer">
+                                <a href="#0" class="cmn--btn">
+                                  <span> Apostar R$300</span>
+                                </a>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="bbets" role="tabpanel">
+                       <div class="combo-wrapper">
+                          <div class="close-box">
+                             <div class="close-items">
+                               <div class="close-head">
+                                   <span>Scotland vs Ukraine</span>
+                                   <span class="close">
+                                      <i class="fas fa-xmark"></i>
+                                   </span>
+                               </div>
+                               <div class="match-fixing">
+                                   <div class="match-items">
+                                      <div class="match-items-left">
+                                         <div class="icon">
+                                            <img src="{% static 'assets/img/header/right-icon/footaball.svg' %}" alt="icon">
+                                         </div>
+                                         <div class="cont">
+                                            <span>Scotland</span>
+                                            <span class="winner">Vitoria</span>
+                                         </div>
+                                      </div>
+                                      <div class="match-items-right">
+                                         <div class="icon">
+                                            <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                         </div>
+                                         <span>3.20</span>
+                                      </div>
+                                   </div>
+                                   <div class="match-items">
+                                      <div class="match-items-left">
+                                         <div class="icon">
+                                            <img src="{% static 'assets/img/header/right-icon/footaball.svg' %}" alt="icon">
+                                         </div>
+                                         <div class="cont">
+                                            <span>Draw</span>
+                                            <span class="winner">Derrota</span>
+                                         </div>
+                                      </div>
+                                      <div class="match-items-right">
+                                         <div class="icon">
+                                            <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                         </div>
+                                         <span>4.60</span>
+                                      </div>
+                                   </div>
+                                   <p>
+                                      Combine mais 5 apostas e multiplique suas odds em x10.08
+                                   </p>
+                                   <div class="match-items match-progress">
+                                      <div class="match-items-left">
+                                        <div class="prabox-wrap">
+                                         <div class="terminal-bar">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                         </div>
+                                         <div class="bar-count">
+                                            <p>x1.08</p>
+                                            <p>x1,15</p>
+                                            <p>x1.20</p>
+                                            <p>x1.50</p>
+                                         </div>
+                                        </div>
+                                      </div>
+                                      <div class="match-items-right">
+                                         <div class="icon">
+                                            <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                         </div>
+                                         <span>1.00</span>
+                                      </div>
+                                   </div>
+                                   <div class="match-items match-odds">
+                                      <div class="match-items-left">
+                                         <div class="cont">
+                                            <span>Total</span>
+                                         </div>
+                                      </div>
+                                      <div class="match-items-right">
+                                         <div class="icon">
+                                            <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                         </div>
+                                         <span>12.19</span>
+                                      </div>
+                                   </div>
+                               </div>
+                             </div>
+                          </div>
+                          <div class="combo-switch">
+                             <span>
+                               Aceitar custos da aposta
+                             </span>
+                             <label class="switch-com">
+                                <input type="checkbox" class="checkbox" hidden>
+                                <span class="checkbox-label">
+                                   <span class="ball"></span>
+                                 </span>
+                             </label>
+                          </div>
+                          <div class="ammount-items">
+                             <form action="#">
+                                <input type="number" placeholder="Valor">
+                                <button type="submit">
+                                   Max
+                                </button>
+                             </form>
+                          </div>
+                          <div class="possible-win">
+                             <span>Previsão</span>
+                             <span class="amount">R$300</span>
+                          </div>
+                          <div class="combo-footer">
+                             <a href="#0" class="cmn--btn">
+                               <span> Aposte R$300</span>
+                             </a>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="accordion-box">
+                 <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <div class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           <span class="icon"><i class="fa-sharp fa-solid fa-gear"></i></span>
+                           <span>Configurações</span>
+                        </button>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <div class="select-wrap">
+                               <div class="select-one">
+                                   <select class="select" name="select" id="n-select">
+                                      <option value="1">Português</option>
+                                      <option value="1">English</option>
+                                      <option value="1">Spanish</option>
+                                   </select>
+                                   <span class="add">Idioma</span>
+                               </div>
+                                <div class="select-two">
+                                   <select class="select" name="select" id="s-select">
+                                      <option value="1">Decimal</option>
+                                      <option value="1">Decimal Odds</option>
+                                   </select>
+                                   <span class="add">Odds</span>
+                                </div>
+                              </div>
+                              <a href="#0" class="condition-box">
+                                Termos & Condições
+                             </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+           </div>
+           <div class="popular-bets">
+              <div class="head">
+                 <h6>
+                    Apostas Populares
+                 </h6>
+              </div>
+              <ul class="popoular-body">
+                 <li class="popular-items">
+                    <label class="popular-itmes-left">
+                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                       <span class="icon">
+                          <i class="icon-football"></i>
+                       </span>
+                       <span class="cont">
+                          <span class="text1">
+                             1x2
+                          </span>
+                          <span class="text2">
+                             Prance
+                          </span>
+                          <span class="text3">
+                             France - Austria
+                          </span>
+                       </span>
+                    </label>
+                    <div class="popular-itmes-right">
+                       <span>
+                          2.37
+                       </span>
+                    </div>
+                 </li>
+                 <li class="popular-items">
+                    <label class="popular-itmes-left">
+                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                       <span class="icon">
+                          <i class="icon-football"></i>
+                       </span>
+                       <span class="cont">
+                          <span class="text1">
+                             1x2
+                          </span>
+                          <span class="text2">
+                             Turkey
+                          </span>
+                          <span class="text3">
+                             Turkey - Luxembourg
+                          </span>
+                       </span>
+                    </label>
+                    <div class="popular-itmes-right">
+                       <span>
+                          1.37
+                       </span>
+                    </div>
+                 </li>
+                 <li class="popular-items">
+                    <label class="popular-itmes-left">
+                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                       <span class="icon">
+                          <i class="icon-football"></i>
+                       </span>
+                       <span class="cont">
+                          <span class="text1">
+                             1x2
+                          </span>
+                          <span class="text2">
+                             Alkmaar
+                          </span>
+                          <span class="text3">
+                             Alkmaar - Apollon
+                          </span>
+                       </span>
+                    </label>
+                    <div class="popular-itmes-right">
+                       <span>
+                          3.47
+                       </span>
+                    </div>
+                 </li>
+              </ul>
+           </div>
+        </div>
+     </div>
+     <!--Right Box Chat-->
+  </div>
+  <!--Main Body Section End-->
+  <!--Main Body Section End-->
