@@ -69,12 +69,12 @@ Section css
   --base: #12A777;
   --title: #3D1879;
   --theme: #03d6f9;
-  --theme-bg: #D5DDEC;
+  --theme-bg: #202A39;
   --login: #1B3931;
-  --box-bg: #EFF4FF;
+  --box-bg: #141C33;
   --varification: #283D39;
   --plc: #3e3737;
-  --details-tab-color: #271A51;
+  --details-tab-color: #D5DDEC;
   --section-bg: #101046;
   --varicode: #8E5858;
   --point-last: #6D9289;
@@ -83,14 +83,14 @@ Section css
   --progress-border: #767676;
   --left-border: #23584C;
   --com-switch: #098F6B;
-  --left-menu: #EBF0F8;
+  --left-menu: #141C33;
   --hob: #71C73E;
   --re-bg: #f6f9ff;
-  --re-bg2: #fff;
+  --re-bg2: #D5DDEC;
   --re-bg3: #ebf0f8;
-  --slider-bg: #D5DDEC;
+  --slider-bg: #141C33;
   --vari-border: #2A433D;
-  --table-bg: #dce2ed;
+  --table-bg: #141C33;
   --match-two: #23C290;
   --point-color: #2F2F2F;
   --social-border: #CBCAF2;
@@ -101,21 +101,21 @@ Section css
   --details-tap-bg: #0F4538;
   --pro-before: #14A876;
   --picture-border: #3C4B4B;
-  --banner-freature: #EFF4FF;
+  --banner-freature: #141C33;
   --search-rgba: rgba(47, 42, 42, 0.4);
   --search-icon: #A1A1BB;
-  --body: #fff;
+  --body: #060C1F;
   --dots: #33645B;
   --dots-active: #6EC640;
   --match-border: #767676;
-  --white: #2B292A;
+  --white: #D5DDEC;
   --black: #111;
   --glo-icon: #A1A1BB;
   --btn-clr: #FFFBFB;
   --btn-two: #FF8A00;
   --Breadcumnd: #271A51;
   --footer: #240945;
-  --pragraph: #271A51;
+  --pragraph: #D5DDEC;
   --prev: #D5DDEC;
   --next: #514477;
   --ratting: #FFAD02;
@@ -1649,7 +1649,7 @@ p {
   background-color: unset;
   border: unset;
   padding: 15px 10px 20px 35px;
-  background-color: var(--theme-bg);
+  background-color: var(--prev);
   border-radius: 5px;
   outline: none;
   font-size: 16px;
@@ -3821,7 +3821,7 @@ p {
   left: -12px;
   line-height: 6px;
   transform: translateY(-50%);
-  background: var(--prev);
+  background: var(--theme-bg);
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -3841,7 +3841,7 @@ p {
   right: -12px;
   line-height: 6px;
   transform: translateY(-50%);
-  background: var(--prev);
+  background: var(--theme-bg);
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -4061,7 +4061,7 @@ p {
   display: block;
   margin-top: -3px;
   margin-bottom: 5px;
-  color: var(--point-color);
+  color: var(--pragraph);
 }
 .main-tabbing .progress-slider-items .match-pointing .match-pointing-box span {
   font-size: 20px;
@@ -4308,7 +4308,7 @@ p {
   display: block;
   margin-top: -3px;
   margin-bottom: 5px;
-  color: var(--point-color);
+  color: var(--pragraph);
 }
 .main-tabbing .match-table .table-wrap .table-inner .table-body .table-body-right .table-pointing-box:not(:last-child) span {
   font-size: 20px;

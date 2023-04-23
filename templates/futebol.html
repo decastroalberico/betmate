@@ -1,0 +1,2440 @@
+"{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>OnlineBets - Sports Betting Website HTML Template</title>
+   <!--Favicon img-->
+   <link rel="shortcut icon" href="{% static 'assets/img/logo/favicon.png' %}">
+   <!--Bootstarp min css-->
+   <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+   <!--Bootstarp map css-->
+   <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css.map' %}">
+   <!--Odometer css-->
+   <link rel="stylesheet" href="{% static 'assets/css/odometer.css' %}">
+   <!--Animate css-->
+   <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+   <!--Magnifiq Popup css-->
+   <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+   <!--All min css-->
+   <link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+   <!--Owl Carousel min css-->
+   <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+      <!--Owl Carousel theme css-->
+   <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.css' %}">
+   <!--Owl Nice select css-->
+   <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+   <!--Glyphter icon css-->
+   <link rel="stylesheet" href="{% static 'assets/glyphter/css/Glyphter.css' %}">
+   <!--Date Ranger css-->
+   <link rel="stylesheet" href="{% static 'assets/css/daterangepicker.css' %}">
+   <!--main css-->
+   <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+</head>
+
+<body>
+
+<!--==== Preloader Start Here ======= -->
+<div class="boxes-bg">
+   <div class="boxes">
+      <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+   </div>
+</div>
+<!--==== Preloader End Here ======= -->
+<!--abu tahir-->
+
+<!--==== Header top Here  ====== -->
+<header class="header-section header-hidden">
+   <div class="header-wrapper">
+      <div class="menu-logo-adjust d-flex align-items-center">
+         <div class="logo-menu me-5">
+            <a href="index.html" class="logo">
+               <img src="{% static 'assets/img/logo/logo.png' %}" alt="logo">
+            </a>
+            <a href="index.html" class="dark-logo">
+               <img src="{% static 'assets/img/logo/dark-logo.png' %}" alt="logo">
+            </a>
+         </div>
+         <div class="header-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <ul class="main-menu">
+            <li class="active">
+               <a href="index.html">Home</a>
+            </li>
+            <li>
+               <a href="live.html">Live</a>
+            </li>
+            <li>
+               <a href="football.html">Sports</a>
+            </li>
+            <li>
+               <a href="cricket.html">V-Sport</a>
+            </li>
+            <li>
+               <a href="profile.html">Promotions</a>
+            </li>
+            <li>
+               <a href="cricket.html">eSports</a>
+            </li>
+            <li>
+               <a href="#0" data-bs-toggle="modal" data-bs-target="#exampleModal2">Quick Bets</a>
+            </li>
+            <li class="menu--btn">
+               <a href="#0" class="btn--two"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span>Log In</span>
+               </a>
+            </li>
+            <li class="menu--btn">
+               <a href="#0" class="cmn--btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  <span>Sign Up</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div class="right-menu-reature">
+         <div class="language">
+            <div class="nice-select" tabindex="0">
+               <span class="current">En</span>
+               <ul class="list">
+                  <li data-value="1" class="option selected focus">En</li>
+                  <li data-value="2" class="option">Bn</li>
+                  <li data-value="3" class="option">Us</li>
+               </ul>
+               <div class="glo-icon">
+                  <i class="fas fa-globe"></i>
+               </div>
+            </div>
+         </div>
+         <div class="mode--toggle">
+            <img src="{% static 'assets/img/sun.png' %}" alt="">
+        </div>
+         <div class="signup-area">
+            <a href="#0" class="btn--two" data-bs-toggle="modal" data-bs-target="#exampleModal">
+               <span>
+                  Log In
+               </span>
+            </a>
+            <a href="#0" class="cmn--btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+               <span>
+                  Sign Up
+               </span>
+            </a>
+         </div>
+      </div>
+   </div>
+</header>
+<!--==== Header top End  ====== -->
+
+<!--Main Body Section Here-->
+<!--Main Body Section Here-->
+<div class="main-body">
+   <!--Left Box Menu-->
+   <div class="left-site-menu">
+      <div class="left-box">
+         <header class="header">
+            <nav class="menu">
+              <ul class="main-list-menu">
+                  <li>
+                     <ul class="menu-promot menu-promot-first">
+                        <li>
+                           <form action="#">
+                              <input type="text" placeholder="Search.........">
+                              <span class="icon">
+                                 <i class="fas fa-magnifying-glass"></i>
+                              </span>
+                           </form>
+                        </li>
+                        <li>
+                           <a href="index.html">
+                              <div class="icon">
+                                 <i class="icon-home"></i>
+                              </div>
+                              <span>
+                                 Home
+                              </span>
+                           </a>
+                           <a href="live.html" class="main-list-menu-live">
+                              <div class="icon">
+                                 <i class="icon-live"></i>
+                              </div>
+                              <span>
+                                 Live
+                              </span>
+                              <span class="live-watch">
+                                 10
+                              </span>
+                           </a>
+                           <a href="favorites.html">
+                              <div class="icon">
+                                 <i class="fas fa-star"></i>
+                              </div>
+                              <span>
+                                 Fovarites
+                              </span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <ul class="menu-promot menu-promot-bottom">
+                        <li class="pro">
+                           Games
+                        </li>
+                        <li class="original-sub">
+                           <div class="dd">
+                              <div class="dd-a d-flex align-items-center justify-content-between">
+                                 <div class="cont d-flex align-items-center active">
+                                    <div class="icon">
+                                       <i class="icon-football"></i>
+                                    </div>
+                                    <span>
+                                       Football
+                                    </span>
+                                 </div>
+                                 <span>
+                                    <i class="fas fa-angle-down"></i>
+                                 </span>
+                              </div>
+                              <input type="checkbox">
+                              <div class="dd-c">
+                                 <ul>
+                                    <li>
+                                       <a href="football.html">
+                                          <div class="icon">
+                                             <i class="icon-football"></i>
+                                          </div>
+                                          <span>
+                                             Football
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="efootball.html">
+                                          <div class="icon">
+                                             <i class="icon-football"></i>
+                                          </div>
+                                          <span>
+                                             eFootball
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="football.html">
+                                          <div class="icon">
+                                             <i class="icon-football"></i>
+                                          </div>
+                                          <span>
+                                             bFootball
+                                          </span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <a href="efootball.html">
+                              <div class="icon">
+                                 <i class="icon-football"></i>
+                              </div>
+                              <span>
+                                 eFootball
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="csgo.html">
+                              <div class="icon">
+                                 <i class="icon-scgo"></i>
+                              </div>
+                              <span>
+                                 CS:GO
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="basketball.html">
+                              <div class="icon">
+                                 <i class="icon-basketball"></i>
+                              </div>
+                              <span>
+                                 Basketball
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="ebasketball.html">
+                              <div class="icon">
+                                 <i class="icon-basketball"></i>
+                              </div>
+                              <span>
+                                 eBasketball
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="tennis.html">
+                              <div class="icon">
+                                 <i class="icon-tennis"></i>
+                              </div>
+                              <span>
+                                 Tennis
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="etennis.html">
+                              <div class="icon">
+                                 <i class="icon-etennis"></i>
+                              </div>
+                              <span>
+                                 eTennis
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="dota2.html">
+                              <div class="icon">
+                                 <i class="icon-dota"></i>
+                              </div>
+                              <span>
+                                 Dota 2
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="lol.html">
+                              <div class="icon">
+                                 <i class="fas fa-star"></i>
+                              </div>
+                              <span>
+                                 LOL
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="icehocky.html">
+                              <div class="icon">
+                                 <i class="icon-hockyball"></i>
+                              </div>
+                              <span>
+                                 Ice hockey
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="ehocky.html">
+                              <div class="icon">
+                                 <i class="icon-hockyman"></i>
+                              </div>
+                              <span>
+                                 eHockey
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="table-tennis.html">
+                              <div class="icon">
+                                 <i class="icon-tabletennis"></i>
+                              </div>
+                              <span>
+                                 Table Tennis
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="volleyball.html">
+                              <div class="icon">
+                                 <i class="icon-volleyball"></i>
+                              </div>
+                              <span>
+                                 Volleyball
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="baseball.html">
+                              <div class="icon">
+                                 <i class="icon-baseball"></i>
+                              </div>
+                              <span>
+                                 Baseball
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="rugby.html">
+                              <div class="icon">
+                                 <i class="icon-rugby"></i>
+                              </div>
+                              <span>
+                                 Rugby
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="mma.html">
+                              <div class="icon">
+                                 <i class="icon-mma"></i>
+                              </div>
+                              <span>
+                                 MMA
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="americanfootball.html">
+                              <div class="icon">
+                                 <i class="icon-americanball"></i>
+                              </div>
+                              <span>
+                                 American Football
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="handball.html">
+                              <div class="icon">
+                                 <i class="icon-handball"></i>
+                              </div>
+                              <span>
+                                 Handball
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="rocket.html">
+                              <div class="icon">
+                                 <i class="icon-rocketluage"></i>
+                              </div>
+                              <span>
+                                 Rocket League
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="boxing.html">
+                              <div class="icon">
+                                 <i class="icon-boxing"></i>
+                              </div>
+                              <span>
+                                 Boxing
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="rainbow.html">
+                              <div class="icon">
+                                 <i class="icon-rainbow"></i>
+                              </div>
+                              <span>
+                                 Rainbow 6
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#0">
+                              <div class="icon">
+                                 <i class="icon-warcraft"></i>
+                              </div>
+                              <span>
+                                 Warcraft III
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="futsal.html">
+                              <div class="icon">
+                                 <i class="icon-futsal"></i>
+                              </div>
+                              <span>
+                                 Futsal
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="cricket.html">
+                              <div class="icon">
+                                 <i class="icon-cricket"></i>
+                              </div>
+                              <span>
+                                 Cricket
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="sc2.html">
+                              <div class="icon">
+                                 <i class="icon-sc2"></i>
+                              </div>
+                              <span>
+                                 SC 2
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="ow.html">
+                              <div class="icon">
+                                 <i class="icon-ow"></i>
+                              </div>
+                              <span>
+                                 OW
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="valor.html">
+                              <div class="icon">
+                                 <i class="icon-valor"></i>
+                              </div>
+                              <span>
+                                 Arena of Valor
+                              </span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+              </ul>
+              <div class="hamburger">
+               <span></span>
+               </div>
+              <div class="hamb">
+               <span></span>
+               </div>
+              <div class="dimmer"></div>
+            </nav>
+         </header>
+      </div>
+   </div>
+   <!--Left Box Menu-->
+ 
+   <!--Middle Body-->
+   <div class="body-middle">
+
+      <!--Breadcumnd-->
+      <div class="breadcumnd-banner">
+         <div class="container">
+            <div class="breadcumd-content">
+               <h1>
+                  Football 
+               </h1>
+               <ul class="bread-tag">
+                  <li>
+                     <a href="#0">
+                        Home
+                     </a>
+                  </li>
+                  <li>
+                     <i class="fas fa-arrow-right"></i>
+                  </li>
+                  <li>
+                     Football
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--Breadcumnd-->
+
+      <!--Main-body-tabing-->
+      <div class="main-body-tabbing">
+         <div class="container">
+            <div class="main-tabbing">
+                <div class="tab-content" id="tabContentmain">
+                  <!--all tab start-->
+                  <div class="tab-pane fade show active" id="betsall" role="tabpanel">
+                     <div class="match-table">
+                        <!--table five-->
+                        <div class="match-table-head pt-20 pb-20">
+                           <h2>
+                              Prematch 09.4.2022
+                           </h2>
+                        </div>
+                        <div class="table-wrap mb-5">
+                           <div class="table-inner">
+                              <div class="table-head">
+                                 <a href="details.html" class="left-compo">
+                                    <span>
+                                       <img src="{% static 'assets/img/table/luage.png' %}" alt="icon">
+                                    </span>
+                                    <span>
+                                       UEFA Champions League
+                                    </span>
+                                 </a>
+                                 <ul class="right-compo">
+                                    <li>
+                                       Oct 21 00:45
+                                    </li>
+                                    <li>
+                                       Match Winner
+                                    </li>
+                                    <li>
+                                       Total
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="table-body">
+                                 <ul class="table-body-left">
+                                    <li>
+                                       <a href="#0">
+                                          <span>Bayern Munich</span>
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/bayern.png' %}" alt="flag">
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0" class="vs">
+                                          VS
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0">
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/plazen.png' %}" alt="flag">
+                                          </span>
+                                          <span>Viktoria Plzen</span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="table-body-right">
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">1</span>
+                                       <span>7.58</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">X</span>
+                                       <span>8.08</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">2</span>
+                                       <span>2.98</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">O 2.5</span>
+                                       <span>1.84</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">U 2.5</span>
+                                       <span>5.7</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="last-digit">+37</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="table-inner">
+                              <div class="table-head">
+                                 <a href="details.html" class="left-compo">
+                                    <span>
+                                       <img src="{% static 'assets/img/table/luage.png' %}" alt="icon">
+                                    </span>
+                                    <span>
+                                       UEFA Champions League
+                                    </span>
+                                 </a>
+                                 <ul class="right-compo">
+                                    <li>
+                                       Oct 21 00:45
+                                    </li>
+                                    <li>
+                                       Match Winner
+                                    </li>
+                                    <li>
+                                       Total
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="table-body">
+                                 <ul class="table-body-left">
+                                    <li>
+                                       <a href="#0">
+                                          <span>Olympique Marseille</span>
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/marseille.png' %}" alt="flag">
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0" class="vs">
+                                          VS
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0">
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/sporting-cp.png' %}" alt="flag">
+                                          </span>
+                                          <span>Sporting CP</span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="table-body-right">
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">1</span>
+                                       <span>7.58</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">X</span>
+                                       <span>8.08</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">2</span>
+                                       <span>2.98</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">O 2.5</span>
+                                       <span>1.84</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">U 2.5</span>
+                                       <span>5.7</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="last-digit">+37</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--Prematch-->
+                        <!--table five-->
+                        <div class="match-table-head pb-20">
+                           <h2>
+                              Prematch 09.4.2022
+                           </h2>
+                        </div>
+                        <div class="table-wrap mb-5">
+                           <div class="table-inner">
+                              <div class="table-head">
+                                 <a href="details.html" class="left-compo">
+                                    <span>
+                                       <img src="{% static 'assets/img/table/luage.png' %}" alt="icon">
+                                    </span>
+                                    <span>
+                                       UEFA Champions League
+                                    </span>
+                                 </a>
+                                 <ul class="right-compo">
+                                    <li>
+                                       Oct 21 00:45
+                                    </li>
+                                    <li>
+                                       Match Winner
+                                    </li>
+                                    <li>
+                                       Total
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="table-body">
+                                 <ul class="table-body-left">
+                                    <li>
+                                       <a href="#0">
+                                          <span>Internazionale</span>
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/internaz.png' %}" alt="flag">
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0" class="vs">
+                                          VS
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0">
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/barsa.png' %}" alt="flag">
+                                          </span>
+                                          <span>Barcelona</span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="table-body-right">
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">1</span>
+                                       <span>7.58</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">X</span>
+                                       <span>8.08</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">2</span>
+                                       <span>2.98</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">O 2.5</span>
+                                       <span>1.84</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">U 2.5</span>
+                                       <span>5.7</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="last-digit">+37</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="table-inner">
+                              <div class="table-head">
+                                 <a href="details.html" class="left-compo">
+                                    <span>
+                                       <img src="{% static 'assets/img/table/luage.png' %}" alt="icon">
+                                    </span>
+                                    <span>
+                                       UEFA Champions League
+                                    </span>
+                                 </a>
+                                 <ul class="right-compo">
+                                    <li>
+                                       Oct 21 00:45
+                                    </li>
+                                    <li>
+                                       Match Winner
+                                    </li>
+                                    <li>
+                                       Total
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="table-body">
+                                 <ul class="table-body-left">
+                                    <li>
+                                       <a href="#0">
+                                          <span>Liverpool</span>
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/liverp0ol.png' %}" alt="flag">
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0" class="vs">
+                                          VS
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0">
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/rangers.png' %}" alt="flag">
+                                          </span>
+                                          <span>Rangers Glasgow</span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="table-body-right">
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">1</span>
+                                       <span>7.58</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">X</span>
+                                       <span>8.08</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">2</span>
+                                       <span>2.98</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">O 2.5</span>
+                                       <span>1.84</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">U 2.5</span>
+                                       <span>5.7</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="last-digit">+37</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="table-inner">
+                              <div class="table-head">
+                                 <a href="details.html" class="left-compo">
+                                    <span>
+                                       <img src="{% static 'assets/img/table/luage.png' %}" alt="icon">
+                                    </span>
+                                    <span>
+                                       UEFA Champions League
+                                    </span>
+                                 </a>
+                                 <ul class="right-compo">
+                                    <li>
+                                       Oct 21 00:45
+                                    </li>
+                                    <li>
+                                       Match Winner
+                                    </li>
+                                    <li>
+                                       Total
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="table-body">
+                                 <ul class="table-body-left">
+                                    <li>
+                                       <a href="#0">
+                                          <span>Porto</span>
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/porto.png' %}" alt="flag">
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0" class="vs">
+                                          VS
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0">
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/bayer.png' %}" alt="flag">
+                                          </span>
+                                          <span>Bayer 04 Leverkusen</span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="table-body-right">
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">1</span>
+                                       <span>7.58</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">X</span>
+                                       <span>8.08</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">2</span>
+                                       <span>2.98</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">O 2.5</span>
+                                       <span>1.84</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">U 2.5</span>
+                                       <span>5.7</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="last-digit">+37</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="table-inner">
+                              <div class="table-head">
+                                 <a href="details.html" class="left-compo">
+                                    <span>
+                                       <img src="{% static 'assets/img/table/luage.png' %}" alt="icon">
+                                    </span>
+                                    <span>
+                                       UEFA Champions League
+                                    </span>
+                                 </a>
+                                 <ul class="right-compo">
+                                    <li>
+                                       Oct 21 00:45
+                                    </li>
+                                    <li>
+                                       Match Winner
+                                    </li>
+                                    <li>
+                                       Total
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="table-body">
+                                 <ul class="table-body-left">
+                                    <li>
+                                       <a href="#0">
+                                          <span>Club Brugge</span>
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/brugge.png' %}" alt="flag">
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0" class="vs">
+                                          VS
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0">
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/atletico-madrid.png' %}" alt="flag">
+                                          </span>
+                                          <span>Atletico Madrid</span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="table-body-right">
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">1</span>
+                                       <span>7.58</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">X</span>
+                                       <span>8.08</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">2</span>
+                                       <span>2.98</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">O 2.5</span>
+                                       <span>1.84</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">U 2.5</span>
+                                       <span>5.7</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="last-digit">+37</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--table premiar-->
+                        <div class="match-table-head pb-20">
+                           <h2>
+                              Prematch 09.4.2022
+                           </h2>
+                        </div>
+                        <div class="table-wrap">
+                           <div class="table-inner">
+                              <div class="table-head">
+                                 <a href="details.html" class="left-compo">
+                                    <span>
+                                       <img src="{% static 'assets/img/table/luage.png' %}" alt="icon">
+                                    </span>
+                                    <span>
+                                       UEFA Champions League
+                                    </span>
+                                 </a>
+                                 <ul class="right-compo">
+                                    <li>
+                                       Oct 21 00:45
+                                    </li>
+                                    <li>
+                                       Match Winner
+                                    </li>
+                                    <li>
+                                       Total
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="table-body">
+                                 <ul class="table-body-left">
+                                    <li>
+                                       <a href="#0">
+                                          <span>Manchester City</span>
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/man-city.png' %}" alt="flag">
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0" class="vs">
+                                          VS
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0">
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/compenhagen.png' %}" alt="flag">
+                                          </span>
+                                          <span>Copenhagen</span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="table-body-right">
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">1</span>
+                                       <span>8.8</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">X</span>
+                                       <span>01.51</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">2</span>
+                                       <span>4.021</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">O 2.5</span>
+                                       <span>92.40</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">U 2.5</span>
+                                       <span>5.07</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="last-digit">+93</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="table-inner">
+                              <div class="table-head">
+                                 <a href="details.html" class="left-compo">
+                                    <span>
+                                       <img src="{% static 'assets/img/table/luage.png' %}" alt="icon">
+                                    </span>
+                                    <span>
+                                       UEFA Champions League
+                                    </span>
+                                 </a>
+                                 <ul class="right-compo">
+                                    <li>
+                                       Oct 21 00:45
+                                    </li>
+                                    <li>
+                                       Match Winner
+                                    </li>
+                                    <li>
+                                       Total
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="table-body">
+                                 <ul class="table-body-left">
+                                    <li>
+                                       <a href="#0">
+                                          <span>Chelsea</span>
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/chelsea.png' %}" alt="flag">
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0" class="vs">
+                                          VS
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0">
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/milan.png' %}" alt="flag">
+                                          </span>
+                                          <span>AC Milan</span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="table-body-right">
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">1</span>
+                                       <span>8.8</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">X</span>
+                                       <span>01.51</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">2</span>
+                                       <span>4.021</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">O 2.5</span>
+                                       <span>92.40</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">U 2.5</span>
+                                       <span>5.07</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="last-digit">+93</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="table-inner">
+                              <div class="table-head">
+                                 <a href="details.html" class="left-compo">
+                                    <span>
+                                       <img src="{% static 'assets/img/table/luage.png' %}" alt="icon">
+                                    </span>
+                                    <span>
+                                       UEFA Champions League
+                                    </span>
+                                 </a>
+                                 <ul class="right-compo">
+                                    <li>
+                                       Oct 21 00:45
+                                    </li>
+                                    <li>
+                                       Match Winner
+                                    </li>
+                                    <li>
+                                       Total
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="table-body">
+                                 <ul class="table-body-left">
+                                    <li>
+                                       <a href="#0">
+                                          <span>Sevilla</span>
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/sevilla.png' %}" alt="flag">
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0" class="vs">
+                                          VS
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0">
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/dortmund.png' %}" alt="flag">
+                                          </span>
+                                          <span>Borussia Dortmund</span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="table-body-right">
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">1</span>
+                                       <span>8.8</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">X</span>
+                                       <span>01.51</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">2</span>
+                                       <span>4.021</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">O 2.5</span>
+                                       <span>92.40</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">U 2.5</span>
+                                       <span>5.07</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="last-digit">+93</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="table-inner">
+                              <div class="table-head">
+                                 <a href="details.html" class="left-compo">
+                                    <span>
+                                       <img src="{% static 'assets/img/table/luage.png' %}" alt="icon">
+                                    </span>
+                                    <span>
+                                       UEFA Champions League
+                                    </span>
+                                 </a>
+                                 <ul class="right-compo">
+                                    <li>
+                                       Oct 21 00:45
+                                    </li>
+                                    <li>
+                                       Match Winner
+                                    </li>
+                                    <li>
+                                       Total
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="table-body">
+                                 <ul class="table-body-left">
+                                    <li>
+                                       <a href="#0">
+                                          <span>Juventus</span>
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/juventus.png' %}" alt="flag">
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0" class="vs">
+                                          VS
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0">
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/haifa.png' %}" alt="flag">
+                                          </span>
+                                          <span>Maccabi Haifa</span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="table-body-right">
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">1</span>
+                                       <span>8.8</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">X</span>
+                                       <span>01.51</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">2</span>
+                                       <span>4.021</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">O 2.5</span>
+                                       <span>92.40</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">U 2.5</span>
+                                       <span>5.07</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="last-digit">+84</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="table-inner">
+                              <div class="table-head">
+                                 <a href="details.html" class="left-compo">
+                                    <span>
+                                       <img src="{% static 'assets/img/table/luage.png' %}" alt="icon">
+                                    </span>
+                                    <span>
+                                       UEFA Champions League
+                                    </span>
+                                 </a>
+                                 <ul class="right-compo">
+                                    <li>
+                                       Oct 21 00:45
+                                    </li>
+                                    <li>
+                                       Match Winner
+                                    </li>
+                                    <li>
+                                       Total
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="table-body">
+                                 <ul class="table-body-left">
+                                    <li>
+                                       <a href="#0">
+                                          <span>Benfica</span>
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/benfica.png' %}" alt="flag">
+                                          </span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0" class="vs">
+                                          VS
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#0">
+                                          <span class="icon">
+                                             <img src="{% static 'assets/img/table/psg.png' %}" alt="flag">
+                                          </span>
+                                          <span>PSG</span>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="table-body-right">
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">1</span>
+                                       <span>8.8</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">X</span>
+                                       <span>01.51</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">2</span>
+                                       <span>4.021</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">O 2.5</span>
+                                       <span>92.40</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="list">U 2.5</span>
+                                       <span>5.07</span>
+                                    </a>
+                                    <a href="#0" class="table-pointing-box">
+                                       <span class="last-digit">+74</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+                  <!--all tab End-->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Main-body-tabing-->
+
+      <!--Sponsor Section-->
+      <div class="sponsor-section">
+         <div class="container">
+            <div class="sponsor-wrap owl-theme owl-carousel">
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/sponsor/01.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/sponsor/02.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/sponsor/03.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/sponsor/04.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/sponsor/05.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/sponsor/06.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/sponsor/07.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/sponsor/08.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/sponsor/09.png' %}" alt="img">
+                  </a>
+               </div>
+            </div>
+            <div class="sponsor-wrap dark-none owl-theme owl-carousel">
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/light-sponsor/01.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/light-sponsor/03.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/light-sponsor/04.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/light-sponsor/05.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/light-sponsor/06.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/light-sponsor/07.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/light-sponsor/08.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/light-sponsor/09.png' %}" alt="img">
+                  </a>
+               </div>
+               <div class="sponsor-item">
+                  <a href="#0">
+                     <img src="{% static 'assets/img/light-sponsor/01.png' %}" alt="img">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Sponsor Section-->
+
+      <!--Footer Section-->
+      <footer class="footer-section">
+         <div class="container">
+            <div class="footer-wrapper">
+               <p>
+                  Copyright 2022 <a href="#0" class="text-base">OnlineBets</a> All Rights Reserved.
+               </p>
+               <ul class="footer-link">
+                  <li>
+                     <a href="#0">
+                        Affiliate program
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#0">
+                        Terms & conditions
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#0">
+                        Bonus terms & conditions
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <!--Footer Section-->
+      <a href="#0" class="click-btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+         <i class="icon-basketball"></i>
+      </a>
+   </div>
+   <!--Middle Body-->
+
+   <!--Right Box Chat-->
+   <div class="right-site-menu">
+      <div class="right-box">
+         <div class="right-wrapper-area">
+            <div class="blance-items">
+               <div class="left-blance">
+                  <span><img src="{% static 'assets/img/header/right-icon/wallet.svg' %}" alt="icon"></span>
+                  <span class="text-blabce">Balance</span>
+               </div>
+               <span class="blance">
+                  $300
+               </span>
+            </div>
+           <div class="betslip-wrapper">
+               <a href="#0" class="left-betslip">
+                  <span class="bed2"><img src="{% static 'assets/img/header/right-icon/bed2.png' %}" alt="icon"></span>
+                  <span class="bed1"><img src="{% static 'assets/img/header/right-icon/bed.svg' %}" alt="icon"></span>
+                  <span class="text-bets">Bet Slip</span>
+               </a>
+               <a href="#0" class="left-betslip">
+                  <span><img src="{% static 'assets/img/header/right-icon/bets.svg' %}" alt="icon"></span>
+                  <span class="text-bets">My Bets</span>
+               </a>
+            </div>
+            <div class="combo-box">
+               <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link link-secondary" id="combo-tab" data-bs-toggle="tab" data-bs-target="#coombo" href="#"><span>Single bets</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-secondary active" id="bets-tab" data-bs-toggle="tab" data-bs-target="#bbets" href="#"><span>Combo</span></a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="tabContentboxes">
+                  <div class="tab-pane fade" id="coombo" role="tabpanel" >
+                     <div class="combo-wrapper">
+                        <div class="combo-wrapper">
+                           <div class="close-box">
+                              <div class="close-items">
+                                <div class="close-head">
+                                    <span>Latvia vs Moldova</span>
+                                    <span class="close">
+                                       <i class="fas fa-xmark"></i>
+                                    </span>
+                                </div>
+                                <div class="match-fixing">
+                                    <div class="match-items">
+                                       <div class="match-items-left">
+                                          <div class="icon">
+                                             <img src="{% static 'assets/img/header/right-icon/footaball.svg' %}" alt="icon">
+                                          </div>
+                                          <div class="cont">
+                                             <span>Moldova</span>
+                                             <span class="winner">Match Winner</span>
+                                          </div>
+                                       </div>
+                                       <div class="match-items-right">
+                                          <div class="icon">
+                                             <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                          </div>
+                                          <span>5.20</span>
+                                       </div>
+                                    </div>
+                                </div>
+                              </div>
+                           </div>
+                           <div class="combo-switch">
+                              <span>
+                                 Accept all odds changes
+                              </span>
+                              <label class="switch-com">
+                                 <input type="checkbox" class="checkbox" hidden>
+                                 <span class="checkbox-label">
+                                    <span class="ball"></span>
+                                  </span>
+                              </label>
+                           </div>
+                           <div class="ammount-items">
+                              <form action="#">
+                                 <input type="number" placeholder="Bet Amount">
+                                 <button type="submit">
+                                    Max
+                                 </button>
+                              </form>
+                           </div>
+                           <div class="possible-win">
+                              <span>Possible win</span>
+                              <span class="amount">$300</span>
+                           </div>
+                           <div class="combo-footer">
+                              <a href="#0" class="cmn--btn">
+                                <span> Place Bet $300</span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade show active" id="bbets" role="tabpanel">
+                     <div class="combo-wrapper">
+                        <div class="close-box">
+                           <div class="close-items">
+                             <div class="close-head">
+                                 <span>Scotland vs Ukraine</span>
+                                 <span class="close">
+                                    <i class="fas fa-xmark"></i>
+                                 </span>
+                             </div>
+                             <div class="match-fixing">
+                                 <div class="match-items">
+                                    <div class="match-items-left">
+                                       <div class="icon">
+                                          <img src="{% static 'assets/img/header/right-icon/footaball.svg' %}" alt="icon">
+                                       </div>
+                                       <div class="cont">
+                                          <span>Scotland</span>
+                                          <span class="winner">Match Winner</span>
+                                       </div>
+                                    </div>
+                                    <div class="match-items-right">
+                                       <div class="icon">
+                                          <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                       </div>
+                                       <span>3.20</span>
+                                    </div>
+                                 </div>
+                                 <div class="match-items">
+                                    <div class="match-items-left">
+                                       <div class="icon">
+                                          <img src="{% static 'assets/img/header/right-icon/footaball.svg' %}" alt="icon">
+                                       </div>
+                                       <div class="cont">
+                                          <span>Draw</span>
+                                          <span class="winner">Match Winner</span>
+                                       </div>
+                                    </div>
+                                    <div class="match-items-right">
+                                       <div class="icon">
+                                          <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                       </div>
+                                       <span>4.60</span>
+                                    </div>
+                                 </div>
+                                 <p>
+                                    Add 2 more outcome(s) with odds greater than 1.4 to get x1.08
+                                 </p>
+                                 <div class="match-items match-progress">
+                                    <div class="match-items-left">
+                                      <div class="prabox-wrap">
+                                       <div class="terminal-bar">
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                       </div>
+                                       <div class="bar-count">
+                                          <p>x1.08</p>
+                                          <p>x1,15</p>
+                                          <p>x1.20</p>
+                                          <p>x1.50</p>
+                                       </div>
+                                      </div>
+                                    </div>
+                                    <div class="match-items-right">
+                                       <div class="icon">
+                                          <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                       </div>
+                                       <span>1.00</span>
+                                    </div>
+                                 </div>
+                                 <div class="match-items match-odds">
+                                    <div class="match-items-left">
+                                       <div class="cont">
+                                          <span>Total odds</span>
+                                       </div>
+                                    </div>
+                                    <div class="match-items-right">
+                                       <div class="icon">
+                                          <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                       </div>
+                                       <span>12.19</span>
+                                    </div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="combo-switch">
+                           <span>
+                              Accept all odds changes
+                           </span>
+                           <label class="switch-com">
+                              <input type="checkbox" class="checkbox" hidden>
+                              <span class="checkbox-label">
+                                 <span class="ball"></span>
+                               </span>
+                           </label>
+                        </div>
+                        <div class="ammount-items">
+                           <form action="#">
+                              <input type="number" placeholder="Bet Amount">
+                              <button type="submit">
+                                 Max
+                              </button>
+                           </form>
+                        </div>
+                        <div class="possible-win">
+                           <span>Possible win</span>
+                           <span class="amount">$300</span>
+                        </div>
+                        <div class="combo-footer">
+                           <a href="#0" class="cmn--btn">
+                             <span> Place Bet $300</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-box">
+               <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                         <span class="icon"><i class="fa-sharp fa-solid fa-gear"></i></span>
+                         <span>Settings</span>
+                      </button>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="select-wrap">
+                             <div class="select-one">
+                                 <select class="select" name="select" id="n-select">
+                                    <option value="1">English</option>
+                                    <option value="1">Spanish</option>
+                                 </select>
+                                 <span class="add">Lunguage</span>
+                             </div>
+                              <div class="select-two">
+                                 <select class="select" name="select" id="s-select">
+                                    <option value="1">Decimal</option>
+                                    <option value="1">Decimal Odds</option>
+                                 </select>
+                                 <span class="add">Odds</span>
+                              </div>
+                            </div>
+                            <a href="#0" class="condition-box">
+                              Terms & Conditions
+                           </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+         </div>
+         <div class="popular-bets">
+            <div class="head">
+               <h6>
+                  Popular bets
+               </h6>
+            </div>
+            <ul class="popoular-body">
+               <li class="popular-items">
+                  <label class="popular-itmes-left">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                     <span class="icon">
+                        <i class="icon-football"></i>
+                     </span>
+                     <span class="cont">
+                        <span class="text1">
+                           1x2
+                        </span>
+                        <span class="text2">
+                           Prance
+                        </span>
+                        <span class="text3">
+                           France - Austria
+                        </span>
+                     </span>
+                  </label>
+                  <div class="popular-itmes-right">
+                     <span>
+                        2.37
+                     </span>
+                  </div>
+               </li>
+               <li class="popular-items">
+                  <label class="popular-itmes-left">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                     <span class="icon">
+                        <i class="icon-football"></i>
+                     </span>
+                     <span class="cont">
+                        <span class="text1">
+                           1x2
+                        </span>
+                        <span class="text2">
+                           Turkey
+                        </span>
+                        <span class="text3">
+                           Turkey - Luxembourg
+                        </span>
+                     </span>
+                  </label>
+                  <div class="popular-itmes-right">
+                     <span>
+                        1.37
+                     </span>
+                  </div>
+               </li>
+               <li class="popular-items">
+                  <label class="popular-itmes-left">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                     <span class="icon">
+                        <i class="icon-football"></i>
+                     </span>
+                     <span class="cont">
+                        <span class="text1">
+                           1x2
+                        </span>
+                        <span class="text2">
+                           Alkmaar
+                        </span>
+                        <span class="text3">
+                           Alkmaar - Apollon
+                        </span>
+                     </span>
+                  </label>
+                  <div class="popular-itmes-right">
+                     <span>
+                        3.47
+                     </span>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <!--Right Box Chat-->
+</div>
+<!--Main Body Section End-->
+<!--Main Body Section End-->
+
+<!-- Popup Section Start -->
+   <div class="modal mylogin signup-popup fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <div class="head">
+                  <h5>
+                     Sign into your account
+                  </h5>
+                  <p>
+                     Don't have an account? <a href="#0" class="text-base">Sign up</a>
+                  </p>
+               </div>
+            </div>
+            <button type="button" class="btn-close cross-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+               <div class="register-from">
+                  <form action="#0">
+                     <div class="items">
+                        <div class="form-input">
+                           <label for="email3" class="form-label">Email</label>
+                           <input type="email" id="email3" placeholder="Your Email">
+                        </div>
+                     </div>
+                     <div class="items">
+                        <div class="form-input">
+                           <label for="password-field" class="form-label">Password</label>
+                           <div class="form-group">
+                              <input id="password-field" type="password" class="form-control" placeholder="Your Password" name="password" value="">
+                              <span id="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="items">
+                        <div class="remember d-flex align-items-center justify-content-between">
+                           <div class="form-check">
+                              <label class="form-check-label" for="flexCheckDefault22">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault22">
+                                 Remember me
+                              </label>
+                           </div>
+                           <a href="#0" class="forget">
+                              Forget password? 
+                           </a>
+                        </div>
+                     </div>
+                     <div class="items text-center">
+                        <button type="submit" class="cmn--btn cd-popup-close repopup">
+                           <span>Start Playing</span>
+                        </button>
+                     </div>
+                     <div class="orbar">
+                        <span>OR</span>
+                     </div>
+                     <ul class="log-social">
+                        <li>
+                           <a href="#0">
+                              <i class="fab fa-steam-symbol"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#0">
+                              <i class="fab fa-twitter"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#0">
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="modal mylogin fade" id="exampleModal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <div class="head">
+                  <h5>
+                     Create New Account
+                  </h5>
+                  <p>
+                     Already have an account? <a href="#0" class="text-base">Login</a>
+                  </p>
+                </div>
+            </div>
+            <button type="button" class="btn-close cross-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+               <div class="register-from">
+                  <form action="#0">
+                     <div class="items">
+                        <div class="form-input">
+                           <label for="uname" class="form-label">Username</label>
+                           <input type="text" id="uname" placeholder="Your Username">
+                        </div>
+                     </div>
+                     <div class="items">
+                        <div class="form-input">
+                           <label for="email33" class="form-label">Email</label>
+                           <input type="email" id="email33" placeholder="Your Email">
+                        </div>
+                     </div>
+                     <div class="items">
+                        <div class="form-input">
+                           <label for="password-field" class="form-label">Password</label>
+                           <div class="form-group">
+                              <input id="password-field2" type="password" class="form-control" placeholder="Your Password" name="password" value="">
+                              <span id="#password-field2" class="fa fa-fw fa-eye field-icon toggle-password2"></span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="items">
+                        <div class="check-area">
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="ones1">
+                              <label class="form-check-label" for="ones1">
+                                 I certify that I am at least 18 years of age
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="ones2">
+                              <label class="form-check-label" for="ones2">
+                                 I agree to the <a href="#0" class="text-base">Privacy Policy</a>
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="ones3">
+                              <label class="form-check-label" for="ones3">
+                                 I want to receive <a href="#0" class="text-base">news and offers</a>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="items text-center">
+                        <button type="submit" class="cmn--btn cd-popup-close repopup">
+                           <span>Start Playing</span>
+                        </button>
+                     </div>
+                     <div class="orbar">
+                        <span>OR</span>
+                     </div>
+                     <ul class="log-social">
+                        <li>
+                           <a href="#0">
+                              <i class="fab fa-steam-symbol"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#0">
+                              <i class="fab fa-twitter"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#0">
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--menu modal-->
+   <div class="modal right-menu-modal fade" id="exampleModal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+         <div class="modal-content">
+            <button type="button" class="btn-close cross-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+               <div class="right-site-menu">
+                  <div class="right-box">
+                     <div class="right-wrapper-area">
+                        <div class="blance-items">
+                           <div class="left-blance">
+                              <span><img src="{% static 'assets/img/header/right-icon/wallet.svg' %}" alt="icon"></span>
+                              <span class="text-blabce">Balance</span>
+                           </div>
+                           <span class="blance">
+                              $300
+                           </span>
+                        </div>
+                        <div class="betslip-wrapper">
+                           <a href="#0" class="left-betslip">
+                              <span><img src="{% static 'assets/img/header/right-icon/bed.svg' %}" alt="icon"></span>
+                              <span class="text-bets">Bet Slip</span>
+                           </a>
+                           <a href="#0" class="left-betslip">
+                              <span><img src="{% static 'assets/img/header/right-icon/bets.svg' %}" alt="icon"></span>
+                              <span class="text-bets">My Bets</span>
+                           </a>
+                        </div>
+                        <div class="combo-box">
+                           <ul class="nav">
+                              <li class="nav-item">
+                                <a class="nav-link link-secondary" data-bs-toggle="tab" data-bs-target="#coombomobile" href="#"><span>Single bets</span></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link link-secondary active" data-bs-toggle="tab" data-bs-target="#bbetsmobile" href="#"><span>Combo</span></a>
+                              </li>
+                            </ul>
+                            <div class="tab-content" id="tabContentboxesmobile">
+                              <div class="tab-pane fade" id="coombomobile" role="tabpanel" >
+                                 <div class="combo-wrapper">
+                                    <div class="combo-wrapper">
+                                       <div class="close-box">
+                                          <div class="close-items">
+                                            <div class="close-head">
+                                                <span>Latvia vs Moldova</span>
+                                                <span class="close">
+                                                   <i class="fas fa-xmark"></i>
+                                                </span>
+                                            </div>
+                                            <div class="match-fixing">
+                                                <div class="match-items">
+                                                   <div class="match-items-left">
+                                                      <div class="icon">
+                                                         <img src="{% static 'assets/img/header/right-icon/footaball.svg' %}" alt="icon">
+                                                      </div>
+                                                      <div class="cont">
+                                                         <span>Moldova</span>
+                                                         <span class="winner">Match Winner</span>
+                                                      </div>
+                                                   </div>
+                                                   <div class="match-items-right">
+                                                      <div class="icon">
+                                                         <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                                      </div>
+                                                      <span>5.20</span>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                       </div>
+                                       <div class="combo-switch">
+                                          <span>
+                                             Accept all odds changes
+                                          </span>
+                                          <label class="switch-com">
+                                             <input type="checkbox" class="checkbox" hidden>
+                                             <span class="checkbox-label">
+                                                <span class="ball"></span>
+                                              </span>
+                                          </label>
+                                       </div>
+                                       <div class="ammount-items">
+                                          <form action="#">
+                                             <input type="number" placeholder="Bet Amount">
+                                             <button type="submit">
+                                                Max
+                                             </button>
+                                          </form>
+                                       </div>
+                                       <div class="possible-win">
+                                          <span>Possible win</span>
+                                          <span class="amount">$300</span>
+                                       </div>
+                                       <div class="combo-footer">
+                                          <a href="#0" class="cmn--btn">
+                                            <span> Place Bet $300</span>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade show active" id="bbetsmobile" role="tabpanel">
+                                 <div class="combo-wrapper">
+                                    <div class="close-box">
+                                       <div class="close-items">
+                                         <div class="close-head">
+                                             <span>Scotland vs Ukraine</span>
+                                             <span class="close">
+                                                <i class="fas fa-xmark"></i>
+                                             </span>
+                                         </div>
+                                         <div class="match-fixing">
+                                             <div class="match-items">
+                                                <div class="match-items-left">
+                                                   <div class="icon">
+                                                      <img src="{% static 'assets/img/header/right-icon/footaball.svg' %}" alt="icon">
+                                                   </div>
+                                                   <div class="cont">
+                                                      <span>Scotland</span>
+                                                      <span class="winner">Match Winner</span>
+                                                   </div>
+                                                </div>
+                                                <div class="match-items-right">
+                                                   <div class="icon">
+                                                      <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                                   </div>
+                                                   <span>3.20</span>
+                                                </div>
+                                             </div>
+                                             <div class="match-items">
+                                                <div class="match-items-left">
+                                                   <div class="icon">
+                                                      <img src="{% static 'assets/img/header/right-icon/footaball.svg' %}" alt="icon">
+                                                   </div>
+                                                   <div class="cont">
+                                                      <span>Draw</span>
+                                                      <span class="winner">Match Winner</span>
+                                                   </div>
+                                                </div>
+                                                <div class="match-items-right">
+                                                   <div class="icon">
+                                                      <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                                   </div>
+                                                   <span>4.60</span>
+                                                </div>
+                                             </div>
+                                             <p>
+                                                Add 2 more outcome(s) with odds greater than 1.4 to get x1.08
+                                             </p>
+                                             <div class="match-items match-progress">
+                                                <div class="match-items-left">
+                                                  <div class="prabox-wrap">
+                                                   <div class="terminal-bar">
+                                                      <span></span>
+                                                      <span></span>
+                                                      <span></span>
+                                                      <span></span>
+                                                      <span></span>
+                                                      <span></span>
+                                                      <span></span>
+                                                      <span></span>
+                                                      <span></span>
+                                                   </div>
+                                                   <div class="bar-count">
+                                                      <p>x1.08</p>
+                                                      <p>x1,15</p>
+                                                      <p>x1.20</p>
+                                                      <p>x1.50</p>
+                                                   </div>
+                                                  </div>
+                                                </div>
+                                                <div class="match-items-right">
+                                                   <div class="icon">
+                                                      <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                                   </div>
+                                                   <span>1.00</span>
+                                                </div>
+                                             </div>
+                                             <div class="match-items match-odds">
+                                                <div class="match-items-left">
+                                                   <div class="cont">
+                                                      <span>Total odds</span>
+                                                   </div>
+                                                </div>
+                                                <div class="match-items-right">
+                                                   <div class="icon">
+                                                      <img src="{% static 'assets/img/header/right-icon/uptodwon.svg' %}" alt="icon">
+                                                   </div>
+                                                   <span>12.19</span>
+                                                </div>
+                                             </div>
+                                         </div>
+                                       </div>
+                                    </div>
+                                    <div class="combo-switch">
+                                       <span>
+                                          Accept all odds changes
+                                       </span>
+                                       <label class="switch-com">
+                                          <input type="checkbox" class="checkbox" hidden>
+                                          <span class="checkbox-label">
+                                             <span class="ball"></span>
+                                           </span>
+                                       </label>
+                                    </div>
+                                    <div class="ammount-items">
+                                       <form action="#">
+                                          <input type="number" placeholder="Bet Amount">
+                                          <button type="submit">
+                                             Max
+                                          </button>
+                                       </form>
+                                    </div>
+                                    <div class="possible-win">
+                                       <span>Possible win</span>
+                                       <span class="amount">$300</span>
+                                    </div>
+                                    <div class="combo-footer">
+                                       <a href="#0" class="cmn--btn">
+                                         <span> Place Bet $300</span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="accordion-box">
+                           <div class="accordion" id="accordionExamplemy">
+                              <div class="accordion-item">
+                                <div class="accordion-header" id="headingThree03">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                     <span class="icon"><i class="fa-sharp fa-solid fa-gear"></i></span>
+                                     <span>Settings</span>
+                                  </button>
+                                  <div id="collapseThreethree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <a href="#0" class="condition-box">
+                                            Terms & Conditions
+                                        </a>
+                                        <div class="select-wrap">
+                                         <div class="select-one">
+                                             <select class="select" name="select" id="n-select2">
+                                                <option value="1">Lunguage</option>
+                                                <option value="1">English</option>
+                                                <option value="1">Spanish</option>
+                                             </select>
+                                             <span class="add">English</span>
+                                         </div>
+                                          <div class="select-two">
+                                             <select class="select" name="select" id="s-select2">
+                                                <option value="1">Odds</option>
+                                                <option value="1">Decimal</option>
+                                                <option value="1">Decimal Odds</option>
+                                             </select>
+                                             <span class="add">Decimal</span>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="popular-bets">
+                        <div class="head">
+                           <h6>
+                              Popular bets
+                           </h6>
+                        </div>
+                        <ul class="popoular-body">
+                           <li class="popular-items">
+                              <label class="popular-itmes-left">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                                 <span class="icon">
+                                    <i class="icon-football"></i>
+                                 </span>
+                                 <span class="cont">
+                                    <span class="text1">
+                                       1x2
+                                    </span>
+                                    <span class="text2">
+                                       Prance
+                                    </span>
+                                    <span class="text3">
+                                       France - Austria
+                                    </span>
+                                 </span>
+                              </label>
+                              <div class="popular-itmes-right">
+                                 <span>
+                                    2.37
+                                 </span>
+                              </div>
+                           </li>
+                           <li class="popular-items">
+                              <label class="popular-itmes-left">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                                 <span class="icon">
+                                    <i class="icon-football"></i>
+                                 </span>
+                                 <span class="cont">
+                                    <span class="text1">
+                                       1x2
+                                    </span>
+                                    <span class="text2">
+                                       Turkey
+                                    </span>
+                                    <span class="text3">
+                                       Turkey - Luxembourg
+                                    </span>
+                                 </span>
+                              </label>
+                              <div class="popular-itmes-right">
+                                 <span>
+                                    1.37
+                                 </span>
+                              </div>
+                           </li>
+                           <li class="popular-items">
+                              <label class="popular-itmes-left">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                                 <span class="icon">
+                                    <i class="icon-football"></i>
+                                 </span>
+                                 <span class="cont">
+                                    <span class="text1">
+                                       1x2
+                                    </span>
+                                    <span class="text2">
+                                       Alkmaar
+                                    </span>
+                                    <span class="text3">
+                                       Alkmaar - Apollon
+                                    </span>
+                                 </span>
+                              </label>
+                              <div class="popular-itmes-right">
+                                 <span>
+                                    3.47
+                                 </span>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+<!-- Popup Section End -->
+
+
+
+   <!--Jquery 3 6 0 Min Js-->
+   <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+   <!--Bootstrap bundle Js-->
+   <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+   <!--Viewport Jquery Js-->
+   <script src="{% static 'assets/js/viewport.jquery.js' %}"></script>
+   <!--Odometer min Js-->
+   <script src="{% static 'assets/js/odometer.min.js' %}"></script>
+   <!--Magnifiw Popup Js-->
+   <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+   <!--Counddown min pkgd Js-->
+   <script src="{% static 'assets/js/countdown.min.js' %}"></script>
+   <!--Wow min Js-->
+   <script src="{% static 'assets/js/wow.min.js' %}"></script>
+   <!--Owl carousel min Js-->
+   <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+   <!--Owl nice select Js-->
+   <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+   <!--main Js-->
+   <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+</html>
