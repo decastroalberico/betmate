@@ -1,8 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from front.models import Eventos
 
 def index(request):
-    return render(request, 'index.html')
+    eventos = Eventos.objects.all()
+    return render(request, 'index.html', {"cards":eventos})
 def detalhes(request):
     return render(request, 'detalhes.html')
 def eventos(request):

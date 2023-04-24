@@ -88,7 +88,7 @@ Section css
   --re-bg: #f6f9ff;
   --re-bg2: #D5DDEC;
   --re-bg3: #ebf0f8;
-  --slider-bg: #D5DDEC;
+  --slider-bg: #141C33;
   --vari-border: #2A433D;
   --table-bg: #141C33;
   --match-two: #23C290;
@@ -96,7 +96,7 @@ Section css
   --social-border: #CBCAF2;
   --terminal-bg: #a7b4cb;
   --icon-hover: #D4AC66;
-  --accordion-bg: #EBF0F8;
+  --accordion-bg: #141C33;
   --details: #EFF4FF;
   --details-tap-bg: #0F4538;
   --pro-before: #14A876;
@@ -1076,7 +1076,7 @@ p {
   top: 0;
   left: 0;
   background-color: var(--theme-bg);
-  padding: 30px 40px;
+  padding: 20px 40px;
 }
 
 .menu-fixed {
@@ -2413,7 +2413,7 @@ p {
 }
 
 .breadcumnd-banner {
-  background-color: var(--details);
+  background-color: var(--left-menu);
   padding: 44px 10px 25px;
 }
 
@@ -4294,7 +4294,7 @@ p {
 .main-tabbing .match-table .table-wrap .table-inner .table-body .table-body-right .table-pointing-box:not(:last-child) {
   text-align: center;
   margin: 0 auto;
-  background-color: var(--left-menu);
+  background-color: var(--theme-bg);
   border-radius: 5px;
   width: 100%;
   padding: 10px 10px;
