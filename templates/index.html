@@ -77,7 +77,8 @@
                       0% Margem
                    </span>
                 </a>
-                <a href="{% url 'eventos' %}" class="banner-feature-items">
+                <a href="" class="banner-feature-items"></a>
+                <!-- <a href="{% url 'eventos' %}" class="banner-feature-items"> -->
                    <span class="banner-feauter-thumb">
                       <img src="{% static 'assets/img/banner-freature/football.svg' %}" alt="feature">
                    </span>
@@ -249,6 +250,9 @@
                       </div>
                       <!--match table Start-->
                       <div class="match-table pt-60">
+                        {% if cards %}
+                        {% for evento in cards %}
+                        {% if evento.campeonato == "Futebol" %}
                          <!--table one-->
                          <div class="match-table-head pt-spane-none">
                             <h2>
@@ -258,10 +262,15 @@
                                Mais
                             </a>
                          </div>
+                         {% endif %}
+                         {% endfor %}
+                         {% else %}
+                         {% endif %}
                          <div class="table-wrap mb-40 pb-10">
                             <div class="table-inner">
                                <div class="table-head">
-                                  <a href="{% url 'eventos' %}" class="left-compo">
+                                 <!-- <a href="{% url 'eventos' %}" class="left-compo"></a> -->
+                                  <a href="" class="left-compo">
                                      <span>
                                         <img src="{% static 'assets/img/table/l-flag.png' %}" alt="icon">
                                      </span>

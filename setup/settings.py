@@ -42,7 +42,18 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "django_extensions",
     'front.apps.FrontConfig',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    # Os provedores de autenticação social que você deseja usar, por exemplo, Facebook, Google, Twitter, etc.
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.twitter',
 ]
+
+AUTHENTICATION_BACKENDS = (
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -52,7 +63,32 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
 ]
+
+SOCIALACCOUNT_PROVIDERS = {
+    'facebook': {
+        'APP': {
+            'client_id': 'YOUR_FACEBOOK_CLIENT_ID',
+            'secret': 'YOUR_FACEBOOK_SECRET',
+            'key': ''
+        }
+    },
+    'google': {
+        'APP': {
+            'client_id': 'YOUR_GOOGLE_CLIENT_ID',
+            'secret': 'YOUR_GOOGLE_SECRET',
+            'key': ''
+        }
+    },
+    'twitter': {
+        'APP': {
+            'client_id': 'YOUR_TWITTER_CLIENT_ID',
+            'secret': 'YOUR_TWITTER_SECRET',
+            'key': ''
+        }
+    },
+}
 
 ROOT_URLCONF = 'setup.urls'
 
@@ -81,10 +117,13 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'db.sqlite3',
+        # 'USER': 'root',
+        # 'PASSWORD': '@B3tM4t3',
+        # 'HOST': 'localhost',
+        # 'PORT': '3306',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

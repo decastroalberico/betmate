@@ -1,3 +1,20 @@
 from django.contrib import admin
+from .models import Pais, Estado, Cidade, Cliente, Atletas, Time, Modalidade, Competicao, Local, Eventos, Scout, OpcaoAposta, Aposta, HistoricoCompra, Pagamentos, Compra, HistoricoAposta
 
-# Register your models here.
+admin.site.register(Pais)
+admin.site.register(Estado)
+admin.site.register(Cidade)
+admin.site.register(Cliente)
+admin.site.register(Atletas)
+admin.site.register(Time)
+admin.site.register(Modalidade)
+admin.site.register(Competicao)
+admin.site.register(Local)
+admin.site.register(Eventos)
+admin.site.register(Scout)
+admin.site.register(OpcaoAposta)
+admin.site.register(Aposta)
+admin.site.register(HistoricoCompra)
+admin.site.register(Pagamentos)
+admin.site.register(Compra)
+admin.site.register(HistoricoAposta)
